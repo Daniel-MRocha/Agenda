@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+   display: flex;
+   justify-content: center
+}
+
+header{
+    width: 50vw;
+    height: 10vh;
+    
+}
+
+.Principal{
+    margin-top: 1em;
+    width: 50vw;
+    height: 90vh;
+    border: solid 0.2em black;
+}
+
+.card{
+    border: solid 0.2em red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3em 1em;
+}
+
+
+.foto{
+    width: 5em;
+    height: 5em;
+    border: solid red 0.1em;
+}
+
+.lista{
+    list-style-position: inside;
+}
