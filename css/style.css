@@ -1,43 +1,138 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-boxc;
+}
+
+@font-face {
+    font-family: font-base;
+    src: url(../fonts/BigShouldersStencil-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: vt323;
+    src: url(../fonts/VT323-Regular.ttf);
 }
 
 body{
    display: flex;
-   justify-content: center
+   justify-content: center;
+   background-color: rgba(147, 137, 137, 0.2);
 }
 
 header{
-    width: 50vw;
-    height: 10vh;
-    
+    border: solid 0.2em rgba(190, 174, 177, 0.437);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+   
+}
+
+#agenda{
+    color:gray;
+    font-weight: 800;
+    font-size: 3em;
+    font-family: vt323;
 }
 
 .Principal{
     margin-top: 1em;
     width: 50vw;
     height: 90vh;
-    border: solid 0.2em black;
+    border: solid 0.2em rgb(255, 255, 255);
+    border-radius: 1em;
 }
 
-.card{
-    border: solid 0.2em red;
+.perfil{
+    border: solid 0.2em rgba(190, 174, 177, 0.437);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 3em 1em;
+    margin: 2em 1em;
+    border-radius: 1em;
+    padding: 0.5em;
+    
+}
+
+card{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
 
 .foto{
     width: 5em;
     height: 5em;
-    border: solid red 0.1em;
+    border: solid 0.3em rgba(190, 174, 177, 0.437);
+    border-radius: 0.5em;
+    object-fit: cover;
+}
+
+.titulo{
+    font-family: font-base;
+}
+
+.logo{
+    width: 5em;
+    height: 5em;
+    object-fit: cover;
 }
 
 .lista{
     list-style-position: inside;
+}
+
+/* linha das listas */
+.datas{
+    background-color: rgba(231, 239, 176, 0.259);
+    margin: 0.2em;
+    padding: 0.2em;
+    border: solid 0.1em black;
+    border-radius: 1em;
+}
+
+
+.data{
+    font-size: 1em;
+    margin-right: 1em;
+}
+  
+.time{
+    margin-right: 1em;
+    font-family: vt323;
+    color:rgb(108, 131, 133);
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.local{
+    margin-right: 1em;
+    text-wrap: nowrap;
+    font-size: 1em;
+    font-style: italic;
+}
+.horario{
+    margin-right: 1em;
+}
+
+footer{
+    border: solid 0.2em rgba(190, 174, 177, 0.437);
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    margin: 2em 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+footer:nth-child(0){
+    margin-left: 1em;
+    color:red
 }
