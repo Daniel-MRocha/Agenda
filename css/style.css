@@ -138,3 +138,14 @@ footer span:nth-child(1){
     font-size: 0.8em;
     font-family: vt323;
 }
+
+@media (max-width:600px) {
+    .Principal{
+        width: 90vw;
+    }
+
+    #agenda{
+        text-wrap: nowrap;
+        font-size: 2em;
+    }
+}
